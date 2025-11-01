@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { counterStore } from "../stores/counterStore";
 
-export default function Counter() {
+export default function CounterB() {
   const [count, setCount] = useState(counterStore.state.count);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function Counter() {
 
   return (
     <>
-      <h1>{count}</h1>
+      <h1>CountB: {count}</h1>
       <button onClick={() => (counterStore.state.count += 1)}>+</button>
       <button onClick={() => (counterStore.state.count = 0)}>reset</button>
       <button onClick={() => (counterStore.state.count -= 1)}>-</button>

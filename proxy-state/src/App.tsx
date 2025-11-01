@@ -1,9 +1,11 @@
-import Counter from "./components/Counter";
+import CounterA from "./components/CounterA";
+import CounterB from "./components/CounterB";
 
 export default function App() {
   return (
     <>
-      <Counter />
+      <CounterA />
+      <CounterB />
     </>
   );
 }
